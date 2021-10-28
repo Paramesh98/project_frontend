@@ -1,0 +1,49 @@
+:root {
+  --mobile: 767px;
+  --tab: 1024px;
+  --heading1Font: 48px;
+  --heading2Font: 32px;
+  --heading3Font: 18px;
+  --red: #cc0000;
+  --blue: #169bd5;
+  --yellow: #cc9900;
+  --grey: #666666;
+  --white: white;
+  --whitesmoke: #f2f2f2;
+  --lightgrey: #c9c9c9;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

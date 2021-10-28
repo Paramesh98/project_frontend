@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--yellow);
+  color: var(--white);
+  border: 1px solid #775900;
+  border-radius: 5px;
+  padding: 5px 20px 3px 20px;
+  cursor: pointer;
+}
+
+.blueButton {
+  background-color: var(--blue);
+}

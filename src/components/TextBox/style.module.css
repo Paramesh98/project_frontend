@@ -1,0 +1,40 @@
+.textContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.textContainer .label {
+  font-size: 13px;
+  padding: 5px;
+  font-family: Microsoft JhengHei, arial;
+  width: 10%;
+  color: var(--white);
+}
+
+.textContainer .textbox {
+  font-size: 13px;
+  padding: 5px;
+  font-family: Microsoft JhengHei, arial;
+  width: 20%;
+  outline: none;
+}
+
+@media /* (min-width: 768px) and */ (max-width: 1024px) {
+  .textContainer .label {
+    width: 20%;
+  }
+
+  .textContainer .textbox {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .textContainer .label {
+    width: 30%;
+  }
+
+  .textContainer .textbox {
+    width: 70%;
+  }
+}

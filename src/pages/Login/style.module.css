@@ -1,0 +1,43 @@
+.container {
+  height: calc(100vh - 80px);
+  flex: 1;
+  background-image: url(../../assert/images/dummy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+.section4 {
+  text-align: right;
+}
+
+.secondSection {
+  background-color: var(--red);
+  padding-bottom: 20px;
+}
+
+.section2,
+.section3,
+.section4 {
+  padding: 0px 20px;
+  padding-top: 20px;
+  background-color: var(--red);
+}
+
+/* @media (max-width: 1024px) {
+  .textContainer .label {
+    width: 20%;
+  }
+
+  .textContainer .textbox {
+    width: 40%;
+  }
+} */
+
+@media (max-width: 767px) {
+  .container {
+    height: calc(100vh - 40px);
+    padding: 20px;
+  }
+}

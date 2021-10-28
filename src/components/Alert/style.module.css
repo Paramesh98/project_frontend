@@ -1,0 +1,14 @@
+.alertContainer {
+  background-color: #dc5655;
+  width: 100%;
+  /* padding: 5px; */
+  margin: 0 auto;
+}
+
+.alertContainer .alert {
+  font-style: italic;
+  text-align: left;
+  color: var(--white);
+  padding: 20px;
+  margin: 0;
+}

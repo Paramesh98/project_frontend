@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuContainer {
+  margin-right: 3%;
+  width: 27%;
+}
+
+@media /* (min-width: 768px) and */ (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .menuContainer {
+    margin-right: 0;
+    width: 100%;
+  }
+}
