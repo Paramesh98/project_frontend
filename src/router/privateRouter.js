@@ -8,8 +8,6 @@ import classes from './style.module.css'
 
 function PrivateRouter({component:Component, ...rest}) {
       const context = useContext(AuthContext)
-   
-  
        return(
            <Route 
             {...rest}

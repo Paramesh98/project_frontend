@@ -36,6 +36,7 @@ return
                 password:user.password
             }
         }
+        
        postApi({url:baseUrl +"login", dataToSubmit:dataToSubmit}).then(res =>{
            console.log(res)
            if(res.data.success && res.data.isUserAuthenticated){
