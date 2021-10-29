@@ -15,6 +15,10 @@ function About() {
             " ex commodo dolor tempor exercitation. Fugiat proident duis in est laboris nisi exercitation."
         ]
     })
+    const [animations,setAnimations] = useState({
+        first:true,
+        second:false
+    })
 
     const getAbout = () =>{
         getApi("/about").then((res) => console.log("res", res)).catch(err => console.log("err", err))
@@ -44,8 +48,9 @@ function About() {
                     <h4>Reusable component</h4>
 
                    <div className={classes.reusableContainer}>
-                       <div></div>
-                       <div></div>
+                       <div onClick={() => setAnimations({...animations,first:!animations.first})} className={animations.first && classes.animation}></div>
+                       <div  onClick={() => setAnimations({...animations,second:!animations.second})} className={animations.second && classes.animation}></div>
+                       {/* <div></div> */}
                    </div>
                 </div>
               </div>
